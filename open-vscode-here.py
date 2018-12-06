@@ -1,4 +1,3 @@
-#!/usr/bin/env python2
 # -*- coding: utf-8 -*-
 
 """This module adds a menu item to the Caja right-click menu which allows to Open Visual Studio Code
@@ -71,8 +70,7 @@ class OpenTerminalHere(GObject.GObject, Caja.MenuProvider):
             return
         item = Caja.MenuItem(name='CajaPython::vscode',
                              label=_('Open VScode Here'),
-                             tip=_(
-                                 'Open the Visual Studio code on the Current/Selected Directory'),
+                             tip=_('Open the Visual Studio code on the Current/Selected Directory'),
                              icon='code')
         item.connect('activate', self.run, sel_items[0])
         return [item]
@@ -82,8 +80,7 @@ class OpenTerminalHere(GObject.GObject, Caja.MenuProvider):
            connects its 'activate' signal to the 'run' method passing the current Directory"""
         item = Caja.MenuItem(name='CajaPython::vscode',
                              label=_('Open VScode Here'),
-                             tip=_(
-                                 'Open the Visual Studio code on the Current/Selected Directory'),
+                             tip=_('Open the Visual Studio code on the Current/Selected Directory'),
                              icon='code')
         item.connect('activate', self.run, current_directory)
         return [item]
