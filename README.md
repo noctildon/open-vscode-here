@@ -7,6 +7,7 @@
     - [Caja](#caja)
     - [Caja-python](#caja-python)
     - [Caja-pyextensions](#caja-pyextensions)
+- [Installation](#installation)
 - [Compatibility](#compatibility)
 - [To do list](#to-do-list)
 
@@ -15,8 +16,12 @@
 
 This caja extension allows to open vscode on current directory just through the right-clicking.
 
-![](img/img1.png)
-![](img/img2.png)
+![](img/des_1.png)
+![](img/des_2.png)
+
+The Python extension scripts are stored at
+
+> ~/.local/share/caja-python/extensions/
 
 
 # Prerequisites
@@ -51,11 +56,39 @@ alternatively, one can download and install the package from the [link](http://w
 If the link is broken, refer to
 https://www.giuspen.com/nautilus-pyextensions/
 
+
+# Installation
+
+1. Run Pyextension by clicking application icon or runnnig the command
+![](img/ins_1.png)
+```console
+$ caja-pyextensions
+```
+2. Click "Add A PyExtension"
+
+![](img/ins_2.png)
+
+3. Download the cource code and chose "open-vscode-here.py"
+
+![](img/ins_3.png)
+
+4. Click the active box
+
+![](img/ins_4.png)
+
+5. Close Caja PyExtensions then restart Caja file manager
+6. Go to Preference -> Extensions, then click the open-vscode-here extension
+
+![](img/ins_5.png)
+
+7. It should work after restarting Caja again
+
 # Compatibility
 
-This program only has been tested in Linux Mint 18.3. But it should work in any OS installed with Caja.
+This program only has been tested in Linux Mint 18.3. But it should work in any OS installed with the prerequisites.
+
 
 # To do list
 
-- [ ] add installation guide
-- [ ] add more description
+- [x] add installation guide
+- [x] add more description
